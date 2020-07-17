@@ -24,21 +24,9 @@
                 <div>{{$user->adus_email}}</div>
             </div>
             <div>
-                <h5>Dummy file.png</h5>
+                <h5>Code QR</h5>
+                <img src= "{{ asset('storage/' . 'picture.png') }}" alt="Code QR" width="300" height="300">
             </div>
-            <div>
-                <img src="{{ FileHelper::getBinaryFile() }}"/>
-            </div>
-            <div>
-                <img src="data:image/jpg;charset=utf8;base64,{{ Storage::get('file.png') }}"/>
-            </div>
-            <div>
-                <h5>Email picture.png</h5>
-            </div>
-            <div>
-                <img src="data:image/jpg;charset=utf8;base64,{{ Storage::get('picture.png') }}"/>
-            </div>
-
         </div>
     </div>
 </div>

@@ -53,9 +53,7 @@ class UserController extends Controller
 
     public function get($id) {
         $user = User::findOrFail($id);
-        $qr = QRCode::text($user->adus_email)->png();
-        Storage::disk('local')->put('picture.png', strval(QRCode::text('email')->png()));
-        Storage::disk('local')->put('file.png', 'QR Code Generator for Laravel!');
+        QRCode::text($user->adus_email)->setOutfile(Storage::path('picture.png'))->png();
         return view('users.get', ['user' => $user]);
     }
     
