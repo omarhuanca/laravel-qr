@@ -14,14 +14,7 @@ use LaravelQRCode\Facades\QRCode;
  */
 class FileHelper {
 
-    public static function constructImageFromBinary($mime) 
-    {
-        $contents = file_get_contents(Storage::get('file.png'));
-        $base64   = base64_encode($contents);
-        return ('data:' . $mime . ';charset=utf8;base64,' . $base64);
-    }
-
-    public static function getBinaryFile() {
-        return Storage::get('file.png');
+    public static function getCodeQR() {
+        return Storage::get('picture.png');
     }
 }

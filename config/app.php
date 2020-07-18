@@ -1,6 +1,7 @@
 <?php
 
 use App\Helper\FileHelper;
+use LaravelQRCode\Providers\QRCodeServiceProvider;
 
 return [
 
