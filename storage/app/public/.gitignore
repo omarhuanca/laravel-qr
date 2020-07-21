@@ -6,3 +6,11 @@
 
 # Animated Portable Network Graphics
 *.apng
+
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
