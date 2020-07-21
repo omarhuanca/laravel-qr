@@ -25,7 +25,7 @@
             </div>
             <div>
                 <h5>Code QR</h5>
-                <img src= "{{ asset('storage/' . 'picture.png') }}" alt="Code QR" width="300" height="300">
+                <img src= "{{ asset('storage/' . 'picture.jpg') }}" alt="Code QR" width="300" height="300">
             </div>
         </div>
     </div>

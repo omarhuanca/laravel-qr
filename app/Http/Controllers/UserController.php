@@ -53,7 +53,7 @@ class UserController extends Controller
 
     public function get($id) {
         $user = User::findOrFail($id);
-        QRCode::text($user->adus_email)->setOutfile(Storage::path('picture.png'))->png();
+        QRCode::text($user->adus_email)->setOutfile(Storage::path('picture.jpg'))->png();
         return view('users.get', ['user' => $user]);
     }
     
